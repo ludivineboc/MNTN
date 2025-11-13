@@ -1,15 +1,22 @@
-/* import typographie */
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
 /* RESET */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+
 }
 
+body {
+    background-color: #0B1D26;
+}
+
+.bg-red {
+    background-color: red;
+}
 /* ------------ LES CLASSES FLEX BOX --------------*/
 
 .flex {
@@ -70,8 +77,8 @@ gap:12px;
     width: 100%;
 }
 
-.w-48 {
-    width: 48%;
+.w-40 {
+    width: 40%;
 }
 
 .w-33{
@@ -79,43 +86,100 @@ gap:12px;
 }
 
 /* CONTAINER */ 
-.container {
+.container-1200 {
     max-width: 1200px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Classes de textes */
+/* POSITIONS */
+.relative{
+    position: relative;
+    top: 0;
+    left: 0;
+}
 
-ul{
+
+/* CLASSES DE TEXTES */
+
+ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
 }
 
-h1, h2, h3, .logo {
-        font-family: "Andada Pro", serif;
-        font-weight: 700;
+h2, a, a i{
+    color: #FBD784;
 }
 
+header a, header a i {
+    color: white;
+}
 
+h1, h3 {
+     font-family: "Andada Pro", serif;
+}
 
+h1 {
+    font-size: 50px;
+}
 
+h3 {
+    font-size: 45px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 8px;
+}
+
+.big-number {
+    color: rgba(255, 255, 255, 0.434);
+    font-size: 150px;
+    position: absolute;
+    top: -93px;
+    left: 0;
+}
+
+.trait {
+    background-color: #FBD784;
+    height: 2px;
+    width: 70px;
+}
+
+/* MARGINs / PADDINGS */
+.mt-100 {
+    margin-top: 100px;
+}
+
+.pl-80 {
+    padding-left: 80px;
+}
 /* HEADER */
-  header {
-    padding: 30px 0 30px 0;
+
+header {
+    padding: 40px 40px 20px 40px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-  }
+}
+/* SECTION 1 - HERO */ 
+.section-hero {
+    height: 100vh;
+    background-image: url(images/banniere.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* SECTION 2 - 01 */ 
 
-  /* HERO */
+/* SECTION 3 - 02 */ 
 
-.hero 
+/* SECTION 4 - 03 */ 
 
+/* FOOTER */ 
 
